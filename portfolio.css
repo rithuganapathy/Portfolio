@@ -1,0 +1,158 @@
+body{
+    background-image: url(images/home.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+}
+
+.name{
+    display: flex;
+    width: 50vh;
+    height: 10vh;
+    margin-top: 5vh;
+    margin-left: 10vh;
+    background-color: rgb(241, 233, 3);
+    border-radius: 20px;
+    border: 7px solid rgb(0, 0, 0);
+}
+.name h1{
+    padding-left: 9.8vh;
+    padding-top: 2vh;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+}
+
+.name h1:hover{
+    font-size: 25.5px;
+    transition: 0.8s;
+    color: rgb(239, 0, 0);
+}
+
+.role{
+    display: flex;
+    width: 50vh;
+    height: 8vh;
+    margin-top: 1vh;
+    margin-left: 10vh;
+    background-color: rgb(241, 233, 3);
+    border-radius: 20px;
+    border: 7px solid rgb(0, 0, 0);
+}
+.role h1{
+    padding-left: 12vh;
+    padding-top: 1.5vh;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.role h1:hover{
+    font-size: 20.5px;
+    transition: 0.8s;
+    color: rgb(239, 0, 0);
+}
+.portfolio{
+    border: 7px solid rgb(0, 0, 0);
+    width: 31.8vh;
+    height: 11.8vh;
+    margin-top: 3vh;
+    margin-left: 19vh;
+    border-radius: 10px;
+    margin-bottom: 9vh;
+}
+.portfolio button{
+    width: 30vh;
+    height: 10vh;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+
+.page button{
+    background-color: rgb(134, 71, 63);
+    border: 7px solid rgb(0, 0, 0);
+    width: 30vh;
+    height: 10vh;
+    margin-top: -0.5vh;
+    margin-left: 20vh;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(246, 255, 0);
+}
+.page button:hover{
+    scale:  1.2;
+    transition: 0.5s;
+    font-weight: 900;
+}
+
+
+.page1 button{
+    background-color: rgb(134, 71, 63);
+    border: 7px solid rgb(0, 0, 0);
+    width: 30vh;
+    height: 10vh;
+    margin-top: 5vh;
+    margin-left: 20vh;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(246, 255, 0);
+}
+.page1 button:hover{
+    scale:  1.2;
+    transition: 0.5s;
+    font-weight: 900;
+}
+
+.page2 button{
+    background-color: rgb(134, 71, 63);
+    border: 7px solid rgb(0, 0, 0);
+    width: 30vh;
+    height: 10vh;
+    margin-top: 5vh;
+    margin-left: 20vh;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(246, 255, 0);
+}
+.page2 button:hover{
+    scale:  1.2;
+    transition: 0.5s;
+    font-weight: 900;
+}
+
+
+.photo img{
+    width: 35vh;
+    height: 24vh;
+    margin-left: 37vh;
+    margin-top: -6vh;
+    border: 6px solid rgb(142, 144, 42);
+    border-radius: 50px;
+}
+.head{
+    background-image: url(images/homebor.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 108.5vh;
+    height: 82vh;
+    margin-left:90vh ;
+    margin-top: -78vh;
+    border: 8px solid rgb(255, 255, 0);
+    border-radius: 20px;
+}
+.head{
+    padding: 15vh;
+}
+.head h1{
+    margin-top: -15vh;
+    margin-left: 4vh;
+    font-size: 40px;
+    font-weight: 900;
+    font-style: italic;
+}
+.head p{
+    font-size: 30px;
+    font-weight: 600;
+    font-style: italic;
+    margin-top: 6vh;
+}
+

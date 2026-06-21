@@ -57,7 +57,7 @@ h1,h2,h3{ font-family: var(--display); margin: 0; font-weight: 600; }
 
 .eyebrow{
   font-family: var(--mono);
-  font-size: 0.78rem;
+  font-size: 1.78rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--accent);
@@ -205,11 +205,51 @@ h1,h2,h3{ font-family: var(--display); margin: 0; font-weight: 600; }
   pointer-events: none;
   transition: background-position 0.2s ease;
 }
-.hero__inner{
+.hero__layout{
   position: relative;
-  max-width: var(--maxw);
+  max-width: 1180px;
   margin: 0 auto;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+.hero__inner{
+  max-width: 560px;
+}
+.hero__photo-frame{
+  position: relative;
+  flex: 1 1 260px;
+  max-width: 320px;
+  padding: 16px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero__photo-frame:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(211, 137, 19, 0.5);
+}
+
+.hero__photo{
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: 6px;
+  display: block;
+}
+
+@media (max-width: 760px){
+  .hero__layout{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+
+  .hero__photo-frame{
+    max-width: 240px;
+  }
 }
 .hero__name{
   font-size: clamp(3rem, 10vw, 6.5rem);
@@ -305,8 +345,9 @@ h1,h2,h3{ font-family: var(--display); margin: 0; font-weight: 600; }
    About
 =========================================================== */
 .about__grid{
+  font-size: 20px;
   display: grid;
-  grid-template-columns: 1.2fr 1fr;
+  grid-template-columns: 280px 1fr;
   gap: 3rem;
   align-items: start;
 }
@@ -314,6 +355,39 @@ h1,h2,h3{ font-family: var(--display); margin: 0; font-weight: 600; }
   font-size: 1.05rem;
   color: var(--text-dim);
   max-width: 50ch;
+}
+
+.about__photo-frame{
+  position: relative;
+  width: 100%;
+  max-width: 280px;
+  padding: 14px;
+  margin-bottom: 1.5rem;
+}
+.about__photo{
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 4px;
+  display: block;
+}
+.corner{
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  border: 1.5px solid var(--accent);
+}
+.corner--tl{ top: 0; left: 0; border-right: none; border-bottom: none; }
+.corner--tr{ top: 0; right: 0; border-left: none; border-bottom: none; }
+.corner--bl{ bottom: 0; left: 0; border-right: none; border-top: none; }
+.corner--br{ bottom: 0; right: 0; border-left: none; border-top: none; }
+.photo-caption{
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.04em;
+  color: var(--text-faint);
+  text-align: center;
+  margin-top: 0.6rem;
 }
 .facts{
   margin: 0;

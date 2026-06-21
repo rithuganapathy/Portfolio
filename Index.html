@@ -15,10 +15,7 @@
 <body>
 
 <!-- ===== Top status bar ===== -->
-<div class="topbar">
-  <span class="topbar__dot" aria-hidden="true"></span>
-  <span>Open to full-stack &amp; AI/ML roles · Immediate joiner · Chennai, India</span>
-</div>
+
 
 <!-- ===== Nav ===== -->
 <header class="nav" id="top">
@@ -44,16 +41,26 @@
   <!-- ===== Hero ===== -->
   <section class="hero" id="hero">
     <div class="hero__glow" id="heroGlow" aria-hidden="true"></div>
-    <div class="hero__inner">
-      <p class="eyebrow">Full-Stack Development · AI Agent Systems</p>
-      <h1 class="hero__name">RITHU&nbsp;G</h1>
-      <p class="hero__lede">
-        I build systems that build systems — research agents that turn PDFs into runnable code,
-        and multi-agent pipelines that generate entire training environments from a single sentence.
-      </p>
-      <div class="hero__actions">
-        <a href="#work" class="btn btn--primary">View Work</a>
-        <a href="#contact" class="btn btn--ghost">Get in Touch</a>
+    <div class="hero__layout">
+      <div class="hero__inner">
+        
+        <h1 class="hero__name">RITHU&nbsp;G</h1>
+        <p class="hero__lede">
+          I build systems that build systems — research agents that turn PDFs into runnable code,
+          and multi-agent pipelines that generate entire training environments from a single sentence.
+        </p>
+        <div class="hero__actions">
+          <a href="#work" class="btn btn--primary">View Work</a>
+          <a href="#contact" class="btn btn--ghost">Get in Touch</a>
+        </div>
+      </div>
+
+      <div class="hero__photo-frame">
+        <span class="corner corner--tl"></span>
+        <span class="corner corner--tr"></span>
+        <span class="corner corner--bl"></span>
+        <span class="corner corner--br"></span>
+        <img src="images/ritu.jpeg" alt="Rithu G" class="hero__photo">
       </div>
     </div>
     <a href="#about" class="hero__scroll" aria-label="Scroll to about section">
@@ -65,16 +72,13 @@
   <section class="section" id="about">
     <div class="section__head reveal">
       <p class="eyebrow">About</p>
-      <h2>Full-stack, with a research habit.</h2>
+      <h2>I build systems that build systems.</h2>
     </div>
 
-    <div class="about__grid">
+   
+
       <p class="about__bio reveal">
-        I'm a computer science graduate currently pursuing an M.Tech in AI &amp; Data Science,
-        with hands-on experience across the stack — from pixel-perfect, cross-browser front ends
-        to REST APIs, Docker, and the data layer underneath. Most of my recent work sits at the
-        intersection of web development and AI: building interfaces for systems that reason,
-        generate, and self-correct.
+        My current focus is AI and machine learning — designing research agents and multi-agent systems capable of reasoning and self-correction. Full-stack experience means I can build the interface and infrastructure around that work as well, not just the model.
       </p>
 
       <dl class="facts reveal">
@@ -86,10 +90,7 @@
           <dt>Education</dt>
           <dd>M.Tech, AI &amp; Data Science — Shiv Nadar University</dd>
         </div>
-        <div class="facts__row">
-          <dt>Prior</dt>
-          <dd>B.E., Computer Science — Prathyusha Engineering College</dd>
-        </div>
+        
         <div class="facts__row">
           <dt>Languages</dt>
           <dd>English, Tamil</dd>
@@ -116,7 +117,7 @@
         <div class="project__header">
           <div>
             <h3 class="project__title">ARPA</h3>
-            
+            <p class="project__subtitle">Autonomous Research Agent Web Platform</p>
           </div>
           <span class="pill pill--status">Ongoing</span>
         </div>
@@ -161,7 +162,7 @@
             <h3 class="project__title">ArenaGen</h3>
             <p class="project__subtitle">Agentic Framework for RL Environment Generation</p>
           </div>
-          <span class="pill pill--win">🏆 Hackathon Winner</span>
+          
         </div>
 
         <ul class="tags">
@@ -199,49 +200,47 @@
         <a href="https://github.com/rithuganapathy" class="project__link" target="_blank" rel="noopener">View on GitHub <span aria-hidden="true">→</span></a>
       </article>
 
-      <!-- Project 3: Brain Stroke Prediction -->
+      <!-- Project 3: Distributed Gradient Descent + Hybrid PSO -->
       <article class="project reveal">
         <div class="project__header">
           <div>
-            <h3 class="project__title">Brain Stroke Prediction</h3>
-            <p class="project__subtitle">Data-Driven ML Application</p>
+            <h3 class="project__title">Distributed Gradient Descent + Hybrid PSO</h3>
+            <p class="project__subtitle">Optimizing Neural Network Training for Dense Datasets</p>
           </div>
         </div>
 
         <ul class="tags">
-          <li>Python</li><li>Scikit-learn</li><li>Pandas</li><li>Matplotlib</li><li>Seaborn</li>
+          <li>Python</li><li>PyTorch</li><li>NumPy</li><li>Scikit-learn</li><li>PySwarms</li><li>Matplotlib</li>
         </ul>
 
         <p class="project__desc">
-          End-to-end exploratory analysis and predictive modeling on a 5,000-record medical dataset,
-          built to surface the risk factors that matter most.
+          A distributed training framework that combines Particle Swarm Optimization with gradient descent to train neural networks faster and more stably on dense data — benchmarked on 113,000+ records of real stock market data.
         </p>
 
         <div class="flow flow--split">
           <div>
-            <p class="flow__label">Models compared</p>
+            <p class="flow__label">Training Strategies Compared</p>
             <div class="flow__chips flow__chips--wrap">
-              <span class="chip">Logistic Regression</span>
-              <span class="chip">Random Forest</span>
-              <span class="chip">SVM</span>
-              <span class="chip chip--accent">Gradient Boosting</span>
+              <span class="chip">Base Training</span>
+              <span class="chip">Data-Split</span>
+              <span class="chip">Epoch-Split</span>
             </div>
           </div>
           <div>
-            <p class="flow__label">Evaluated on</p>
+            <p class="flow__label">Optimization Methods</p>
             <div class="flow__chips flow__chips--wrap">
-              <span class="chip">Accuracy</span>
-              <span class="chip">Precision</span>
-              <span class="chip">Recall</span>
-              <span class="chip">F1-Score</span>
+              <span class="chip">Standard PSO</span>
+              <span class="chip">Multi-Particle PSO</span>
+              <span class="chip">Hybrid PSO-Adam</span>
             </div>
           </div>
         </div>
+            
 
         <ul class="project__points">
-          <li>Ran full EDA and built an interactive visualization layer (Matplotlib + Seaborn) to surface key clinical risk factors</li>
-          <li>Trained and compared four classifiers, evaluated on accuracy, precision, recall, and F1-score on a held-out test set</li>
-          <li>Applied SMOTE class-balancing to correct for minority-class bias, improving reliability for clinical decision support</li>
+          <li>Built a parameter-server-based distributed training framework in PyTorch, simulating multi-node gradient aggregation through both thread-based and process-based workers communicating via synchronized queues</li>
+          <li>Designed a hybrid PSO-Adam optimizer where particle swarm optimization handles global exploration of the parameter space and Adam refines locally — achieving the fastest, most stable convergence of every method tested</li>
+          <li>Applied Top-K gradient compression, transmitting only the most significant 10% of gradient values, cutting communication overhead by roughly 90% with no meaningful loss in prediction accuracy</li>
         </ul>
 
         <a href="https://github.com/rithuganapathy" class="project__link" target="_blank" rel="noopener">View on GitHub <span aria-hidden="true">→</span></a>
@@ -259,10 +258,19 @@
 
     <div class="skills reveal">
       <div class="skills__group">
+        <p class="skills__label">AI &amp; Data</p>
+        <div class="flow__chips flow__chips--wrap">
+          <span class="chip">LangGraph</span><span class="chip">Multi-Agent Orchestration</span>
+          <span class="chip">PyTorch</span><span class="chip">PySwarms</span>
+          <span class="chip">NumPy</span><span class="chip">Pandas</span><span class="chip">Scikit-learn</span>
+          <span class="chip">RAG</span><span class="chip">TRL</span><span class="chip"> LLM fine-tuning</span>
+        </div>
+      </div>
+      <div class="skills__group">
         <p class="skills__label">Frontend</p>
         <div class="flow__chips flow__chips--wrap">
-          <span class="chip">HTML5</span><span class="chip">CSS3</span><span class="chip">JavaScript (ES6+)</span>
-          <span class="chip">React.js</span><span class="chip">jQuery</span><span class="chip">AJAX / JSON</span>
+          <span class="chip">HTML5</span><span class="chip">CSS3</span><span class="chip">JavaScript</span>
+          <span class="chip">React.js</span><span class="chip">jQuery</span>
           <span class="chip">Responsive Design</span>
         </div>
       </div>
@@ -274,22 +282,14 @@
         </div>
       </div>
       <div class="skills__group">
-        <p class="skills__label">AI &amp; Data</p>
-        <div class="flow__chips flow__chips--wrap">
-          <span class="chip">LangGraph</span><span class="chip">Multi-Agent Orchestration</span>
-          <span class="chip">NumPy</span><span class="chip">Pandas</span><span class="chip">Scikit-learn</span>
-        </div>
-      </div>
-      <div class="skills__group">
         <p class="skills__label">Analysis &amp; Tools</p>
         <div class="flow__chips flow__chips--wrap">
           <span class="chip">Git / GitHub</span><span class="chip">Tableau</span><span class="chip">Power BI</span>
-          <span class="chip">Matplotlib</span><span class="chip">CMS Workflows</span>
+          <span class="chip">Matplotlib</span>
         </div>
       </div>
     </div>
   </section>
-
   <!-- ===== Background: Education + Achievements ===== -->
   <section class="section" id="background">
     <div class="section__head reveal">

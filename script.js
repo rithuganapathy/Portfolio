@@ -67,7 +67,7 @@ if (emailBtn) {
     } catch (err) {
       emailHint.textContent = 'select & copy manually';
     }
-    setTimeout(() => { emailHint.textContent = 'click to copy'; }, 2200);
+    setTimeout(() => { emailHint.textContent = 'click to copy'; }, 5000);
   });
 }
 

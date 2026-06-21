@@ -86,6 +86,6 @@ const navObserver = new IntersectionObserver((entries) => {
       });
     }
   });
-}, { threshold: 0.5 });
+}, { threshold: 0, rootMargin: '-45% 0px -50% 0px' });
 
 sections.forEach(s => navObserver.observe(s));

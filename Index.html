@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rithu G — Full-Stack Developer, AI/ML</title>
+<meta name="description" content="Rithu G — Full-stack developer specializing in AI agent systems. Portfolio of web applications, multi-agent pipelines, and ML projects.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== Top status bar ===== -->
+<div class="topbar">
+  <span class="topbar__dot" aria-hidden="true"></span>
+  <span>Open to full-stack &amp; AI/ML roles · Immediate joiner · Chennai, India</span>
+</div>
+
+<!-- ===== Nav ===== -->
+<header class="nav" id="top">
+  <a href="#top" class="nav__mark" aria-label="Rithu G — home">
+    <span class="nav__mark-tile">RG</span>
+  </a>
+
+  <nav class="nav__links" id="navLinks">
+    <a href="#about">About</a>
+    <a href="#work">Work</a>
+    <a href="#skills">Skills</a>
+    <a href="#background">Background</a>
+    <a href="#contact" class="nav__cta">Contact</a>
+  </nav>
+
+  <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<main>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero" id="hero">
+    <div class="hero__glow" id="heroGlow" aria-hidden="true"></div>
+    <div class="hero__inner">
+      <p class="eyebrow">Full-Stack Development · AI Agent Systems</p>
+      <h1 class="hero__name">RITHU&nbsp;G</h1>
+      <p class="hero__lede">
+        I build systems that build systems — research agents that turn PDFs into runnable code,
+        and multi-agent pipelines that generate entire training environments from a single sentence.
+      </p>
+      <div class="hero__actions">
+        <a href="#work" class="btn btn--primary">View Work</a>
+        <a href="#contact" class="btn btn--ghost">Get in Touch</a>
+      </div>
+    </div>
+    <a href="#about" class="hero__scroll" aria-label="Scroll to about section">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- ===== About ===== -->
+  <section class="section" id="about">
+    <div class="section__head reveal">
+      <p class="eyebrow">About</p>
+      <h2>Full-stack, with a research habit.</h2>
+    </div>
+
+    <div class="about__grid">
+      <p class="about__bio reveal">
+        I'm a computer science graduate currently pursuing an M.Tech in AI &amp; Data Science,
+        with hands-on experience across the stack — from pixel-perfect, cross-browser front ends
+        to REST APIs, Docker, and the data layer underneath. Most of my recent work sits at the
+        intersection of web development and AI: building interfaces for systems that reason,
+        generate, and self-correct.
+      </p>
+
+      <dl class="facts reveal">
+        <div class="facts__row">
+          <dt>Location</dt>
+          <dd>Chennai, India</dd>
+        </div>
+        <div class="facts__row">
+          <dt>Education</dt>
+          <dd>M.Tech, AI &amp; Data Science — Shiv Nadar University</dd>
+        </div>
+        <div class="facts__row">
+          <dt>Prior</dt>
+          <dd>B.E., Computer Science — Prathyusha Engineering College</dd>
+        </div>
+        <div class="facts__row">
+          <dt>Languages</dt>
+          <dd>English, Tamil</dd>
+        </div>
+        <div class="facts__row">
+          <dt>Status</dt>
+          <dd>Immediate joiner · open to rotational shifts</dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- ===== Work / Projects ===== -->
+  <section class="section" id="work">
+    <div class="section__head reveal">
+      <p class="eyebrow">Selected Work</p>
+      <h2>Three systems, three different problems.</h2>
+    </div>
+
+    <div class="projects">
+
+      <!-- Project 1: ARPA -->
+      <article class="project reveal">
+        <div class="project__header">
+          <div>
+            <h3 class="project__title">ARPA</h3>
+            
+          </div>
+          <span class="pill pill--status">Ongoing</span>
+        </div>
+
+        <ul class="tags">
+          <li>Python</li><li>React</li><li>REST APIs</li><li>Docker</li><li>Pydantic</li>
+        </ul>
+
+        <p class="project__desc">
+          A full-stack platform that turns a research PDF into runnable ML experiment code.
+          Upload a paper, and the system reads it, reasons about it, and hands back working code.
+        </p>
+
+        <div class="flow">
+          <p class="flow__label">How it works</p>
+          <div class="flow__chips">
+            <span class="chip">Upload</span>
+            <span class="flow__arrow" aria-hidden="true"></span>
+            <span class="chip">Multi-Pass Parsing</span>
+            <span class="flow__arrow" aria-hidden="true"></span>
+            <span class="chip">LLM Reasoning</span>
+            <span class="flow__arrow" aria-hidden="true"></span>
+            <span class="chip">Confidence Scoring</span>
+            <span class="flow__arrow" aria-hidden="true"></span>
+            <span class="chip chip--accent">Code Output</span>
+          </div>
+        </div>
+
+        <ul class="project__points">
+          <li>Built the React front end and the RESTful endpoints behind it — handling file uploads and returning structured JSON to the client</li>
+          <li>Designed a multi-pass document pipeline that compresses 40-page PDFs into structured data, rendered live in the browser</li>
+          <li>Connected a backend-agnostic LLM client (Gemini API / Ollama) with a confidence-scoring layer, validating every API interaction through Postman</li>
+        </ul>
+
+        <a href="https://github.com/rithuganapathy" class="project__link" target="_blank" rel="noopener">View on GitHub <span aria-hidden="true">→</span></a>
+      </article>
+
+      <!-- Project 2: ArenaGen -->
+      <article class="project reveal">
+        <div class="project__header">
+          <div>
+            <h3 class="project__title">ArenaGen</h3>
+            <p class="project__subtitle">Agentic Framework for RL Environment Generation</p>
+          </div>
+          <span class="pill pill--win">🏆 Hackathon Winner</span>
+        </div>
+
+        <ul class="tags">
+          <li>Python</li><li>TRL</li><li>Multi-Agent Orchestration</li><li>April 2026</li>
+        </ul>
+
+        <p class="project__desc">
+          Describe a task in plain English, and a team of five agents builds a complete
+          reinforcement-learning training environment around it — no manual engineering required.
+        </p>
+
+        <div class="flow">
+          <p class="flow__label">Agent pipeline</p>
+          <div class="flow__chips">
+            <span class="chip">Designer</span>
+            <span class="flow__arrow" aria-hidden="true"></span>
+            <span class="chip">Coder</span>
+            <span class="flow__arrow" aria-hidden="true"></span>
+            <span class="chip">Verifier</span>
+            <span class="flow__arrow" aria-hidden="true"></span>
+            <span class="chip">Instance Generator</span>
+            <span class="flow__arrow" aria-hidden="true"></span>
+            <span class="chip chip--accent">Self-Repair</span>
+          </div>
+          <p class="flow__note">Self-Repair is confidence-gated — it only steps in when the system isn't sure of itself.</p>
+        </div>
+
+        <ul class="project__points">
+          <li>Designed the five-agent architecture end to end, from task parsing to environment validation</li>
+          <li>Built a confidence-gated self-repair loop that catches and fixes runtime errors automatically</li>
+          <li>Generated 5+ diverse, TRL-compatible RL environments from natural-language prompts alone</li>
+          <li>Part of the winning team at the Centific AI Hackathon</li>
+        </ul>
+
+        <a href="https://github.com/rithuganapathy" class="project__link" target="_blank" rel="noopener">View on GitHub <span aria-hidden="true">→</span></a>
+      </article>
+
+      <!-- Project 3: Brain Stroke Prediction -->
+      <article class="project reveal">
+        <div class="project__header">
+          <div>
+            <h3 class="project__title">Brain Stroke Prediction</h3>
+            <p class="project__subtitle">Data-Driven ML Application</p>
+          </div>
+        </div>
+
+        <ul class="tags">
+          <li>Python</li><li>Scikit-learn</li><li>Pandas</li><li>Matplotlib</li><li>Seaborn</li>
+        </ul>
+
+        <p class="project__desc">
+          End-to-end exploratory analysis and predictive modeling on a 5,000-record medical dataset,
+          built to surface the risk factors that matter most.
+        </p>
+
+        <div class="flow flow--split">
+          <div>
+            <p class="flow__label">Models compared</p>
+            <div class="flow__chips flow__chips--wrap">
+              <span class="chip">Logistic Regression</span>
+              <span class="chip">Random Forest</span>
+              <span class="chip">SVM</span>
+              <span class="chip chip--accent">Gradient Boosting</span>
+            </div>
+          </div>
+          <div>
+            <p class="flow__label">Evaluated on</p>
+            <div class="flow__chips flow__chips--wrap">
+              <span class="chip">Accuracy</span>
+              <span class="chip">Precision</span>
+              <span class="chip">Recall</span>
+              <span class="chip">F1-Score</span>
+            </div>
+          </div>
+        </div>
+
+        <ul class="project__points">
+          <li>Ran full EDA and built an interactive visualization layer (Matplotlib + Seaborn) to surface key clinical risk factors</li>
+          <li>Trained and compared four classifiers, evaluated on accuracy, precision, recall, and F1-score on a held-out test set</li>
+          <li>Applied SMOTE class-balancing to correct for minority-class bias, improving reliability for clinical decision support</li>
+        </ul>
+
+        <a href="https://github.com/rithuganapathy" class="project__link" target="_blank" rel="noopener">View on GitHub <span aria-hidden="true">→</span></a>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ===== Skills ===== -->
+  <section class="section" id="skills">
+    <div class="section__head reveal">
+      <p class="eyebrow">Skills</p>
+      <h2>Tools I reach for.</h2>
+    </div>
+
+    <div class="skills reveal">
+      <div class="skills__group">
+        <p class="skills__label">Frontend</p>
+        <div class="flow__chips flow__chips--wrap">
+          <span class="chip">HTML5</span><span class="chip">CSS3</span><span class="chip">JavaScript (ES6+)</span>
+          <span class="chip">React.js</span><span class="chip">jQuery</span><span class="chip">AJAX / JSON</span>
+          <span class="chip">Responsive Design</span>
+        </div>
+      </div>
+      <div class="skills__group">
+        <p class="skills__label">Backend &amp; Infra</p>
+        <div class="flow__chips flow__chips--wrap">
+          <span class="chip">Python</span><span class="chip">Java</span><span class="chip">SQL</span>
+          <span class="chip">REST APIs</span><span class="chip">Docker</span><span class="chip">Postman</span>
+        </div>
+      </div>
+      <div class="skills__group">
+        <p class="skills__label">AI &amp; Data</p>
+        <div class="flow__chips flow__chips--wrap">
+          <span class="chip">LangGraph</span><span class="chip">Multi-Agent Orchestration</span>
+          <span class="chip">NumPy</span><span class="chip">Pandas</span><span class="chip">Scikit-learn</span>
+        </div>
+      </div>
+      <div class="skills__group">
+        <p class="skills__label">Analysis &amp; Tools</p>
+        <div class="flow__chips flow__chips--wrap">
+          <span class="chip">Git / GitHub</span><span class="chip">Tableau</span><span class="chip">Power BI</span>
+          <span class="chip">Matplotlib</span><span class="chip">CMS Workflows</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Background: Education + Achievements ===== -->
+  <section class="section" id="background">
+    <div class="section__head reveal">
+      <p class="eyebrow">Background</p>
+      <h2>Education &amp; achievements.</h2>
+    </div>
+
+    <div class="timeline reveal">
+      <div class="timeline__row">
+        <span class="timeline__date">2024 — Present</span>
+        <div>
+          <p class="timeline__title">M.Tech, Artificial Intelligence &amp; Data Science</p>
+          <p class="timeline__org">Shiv Nadar University, Chennai</p>
+          <p class="timeline__desc">Coursework: Machine Learning, Data Structures &amp; Algorithms, Distributed Systems, Software Engineering.</p>
+        </div>
+      </div>
+      <div class="timeline__row">
+        <span class="timeline__date">2019 — 2023</span>
+        <div>
+          <p class="timeline__title">B.E., Computer Science</p>
+          <p class="timeline__org">Prathyusha Engineering College, Chennai</p>
+          <p class="timeline__desc">Foundation in web technologies, object-oriented programming, database management, and SDLC.</p>
+        </div>
+      </div>
+      <div class="timeline__row">
+        <span class="timeline__date">Apr 2026</span>
+        <div>
+          <p class="timeline__title">AI Hackathon</p>
+          <p class="timeline__desc">ArenaGen recognized among top submissions for autonomous RL environment generation using multi-agent LLM orchestration.</p>
+        </div>
+      </div>
+      <div class="timeline__row">
+        <span class="timeline__date">Ongoing</span>
+        <div>
+          <p class="timeline__title">M.Tech Thesis — Hybrid PSO + Distributed Gradient Descent</p>
+          <p class="timeline__desc">A novel optimisation framework for distributed neural network training, benchmarked against standard SGD and Adam.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Contact ===== -->
+  <section class="section section--contact" id="contact">
+    <div class="contact reveal">
+      <p class="eyebrow">Get in Touch</p>
+      <h2>Let's build something.</h2>
+      <p class="contact__lede">Open to full-stack and AI/ML roles. Immediate joiner, comfortable with rotational shifts.</p>
+
+      <button class="email-btn" id="emailBtn" data-email="rithuganapathy@gmail.com">
+        <span id="emailText">rithuganapathy@gmail.com</span>
+        <span class="email-btn__hint" id="emailHint">click to copy</span>
+      </button>
+
+      <div class="contact__links">
+        <a href="tel:+919940151299">+91 99401 51299</a>
+        <a href="https://linkedin.com/in/rithuganapathy" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a href="https://github.com/rithuganapathy" target="_blank" rel="noopener">GitHub ↗</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>© 2026 Rithu G. Built with HTML, CSS &amp; a bit of JS.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
